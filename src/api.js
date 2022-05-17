@@ -1,5 +1,5 @@
 // ---- API ----
-const URL = 'https://61ddd77df60e8f0017668aa9.mockapi.io/api/v1/todos';
+// const URL = 'https://61ddd77df60e8f0017668aa9.mockapi.io/api/v1/todos';
 
 // ---- fetch ----
 // export const fetchTodos = () => fetch(URL).then((resp) => resp.json());
@@ -28,16 +28,16 @@ const URL = 'https://61ddd77df60e8f0017668aa9.mockapi.io/api/v1/todos';
 //   }).then((resp) => resp.json());
 
 // ---- axios ----
-export const fetchTodos = () =>
-  axios.get(URL).then((resp) => {
-    console.log(resp);
+// export const fetchTodos = () =>
+//   axios.get(URL).then((resp) => {
+//     console.log(resp);
 
-    return resp.data;
-  });
+//     return resp.data;
+//   });
 
-export const deleteTodo = (id) => axios.delete(`${URL}/${id}`);
+// export const deleteTodo = (id) => axios.delete(`${URL}/${id}`);
 
-export const updateTodo = (id, data) => axios.put(`${URL}/${id}`, data);
+// export const updateTodo = (id, data) => axios.put(`${URL}/${id}`, data);
 
-export const createTodo = (newItem) =>
-  axios.post(URL, newItem).then(({ data }) => data);
+// export const createTodo = (newItem) =>
+//   axios.post(URL, newItem).then(({ data }) => data);
